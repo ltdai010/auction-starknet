@@ -1,0 +1,169 @@
+[
+    {
+        "members": [
+            {
+                "name": "start_price",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "highest_bidder",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "coin_buy",
+                "offset": 2,
+                "type": "felt"
+            },
+            {
+                "name": "creator",
+                "offset": 3,
+                "type": "felt"
+            },
+            {
+                "name": "ended",
+                "offset": 4,
+                "type": "felt"
+            }
+        ],
+        "name": "Auction",
+        "size": 5,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_contract_sale",
+                "type": "felt"
+            },
+            {
+                "name": "_token_id",
+                "type": "felt"
+            }
+        ],
+        "name": "auction_info",
+        "outputs": [
+            {
+                "name": "res",
+                "type": "Auction"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_contract_sale",
+                "type": "felt"
+            },
+            {
+                "name": "_token_id",
+                "type": "felt"
+            },
+            {
+                "name": "_bidder",
+                "type": "felt"
+            }
+        ],
+        "name": "bidded_balance",
+        "outputs": [
+            {
+                "name": "res",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_contract_sale",
+                "type": "felt"
+            },
+            {
+                "name": "_token_id",
+                "type": "felt"
+            },
+            {
+                "name": "_coin_buy",
+                "type": "felt"
+            },
+            {
+                "name": "_start_price",
+                "type": "felt"
+            }
+        ],
+        "name": "start",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_contract_sale",
+                "type": "felt"
+            },
+            {
+                "name": "_token_id",
+                "type": "felt"
+            },
+            {
+                "name": "amount",
+                "type": "Uint256"
+            }
+        ],
+        "name": "bid",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_contract_sale",
+                "type": "felt"
+            },
+            {
+                "name": "_token_id",
+                "type": "felt"
+            }
+        ],
+        "name": "withdraw",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_contract_sale",
+                "type": "felt"
+            },
+            {
+                "name": "_token_id",
+                "type": "felt"
+            }
+        ],
+        "name": "finish",
+        "outputs": [],
+        "type": "function"
+    }
+]
