@@ -5,11 +5,8 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract NFTAuction is ERC721Enumerable, Ownable {
-    constructor(string memory _uri) ERC721("NFTAuction", "NFTA") {
-        uri = _uri;
-    }
+    constructor() ERC721("NFTAuction", "NFTA") {}
     
-    string public uri;
     mapping(uint256 => string) mapUri;
 
 

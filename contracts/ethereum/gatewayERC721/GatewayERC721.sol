@@ -4,7 +4,7 @@ pragma solidity ^0.8.10;
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "./IStarknetCore.sol";
 
-contract Gateway {
+contract GatewayERC721 {
     address public initialEndpointGatewaySetter;
     uint256 public endpointGateway;
     IStarknetCore public starknetCore;

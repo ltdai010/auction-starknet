@@ -1,0 +1,10 @@
+version: "3"
+services:
+
+  os:
+    image: python:3.7-alpine3.15
+    volumes:
+      - .:/app
+    network_mode: "host"
+    command: sleep infinity
+    
