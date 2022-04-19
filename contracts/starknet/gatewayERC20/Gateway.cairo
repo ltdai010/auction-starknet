@@ -101,7 +101,7 @@ func consume_mint_credit{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range
     IBridgedERC20.create_token(
         contract_address=_l2_token_address, owner=_l2_owner, amount=_amount)
     mint_credits.write(
-        l1_token_address=_l1_token_address, amount=_amount, owner=_l2_owner, value=currentNum - 1)
+        l1_token_address=_l1_token_address, amount=_amount, owner=_l2_owner, l2_token_address=_l2_token_address, value=currentNum - 1)
 
     return ()
 end
@@ -112,7 +112,7 @@ func revoke_mint_credit{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_
         _l1_token_address : felt, _l2_token_address : felt, _amount : felt):
     let (caller_address) = get_caller_address()
     let (currentNum) = mint_credits.read(
-        l1_token_address=_l1_token_address, amount=_amount, owner=caller_address)
+        l1_token_address=_l1_token_address, amount=_amount, owner=caller_address, l2_token_address=_l2_token_address)
 
     assert_not_zero(currentNum)
 
@@ -128,7 +128,7 @@ func revoke_mint_credit{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_
     send_message_to_l1(to_address=l1_gateway_address, payload_size=5, payload=message_payload)
 
     mint_credits.write(
-        l1_token_address=_l1_token_address, amount=_amount, owner=caller_address, value=currentNum - 1)
+        l1_token_address=_l1_token_address, amount=_amount, owner=caller_address, l2_token_address=_l2_token_address, value=currentNum - 1)
 
     return ()
 end

@@ -8,7 +8,7 @@ from starkware.cairo.common.uint256 import (
     Uint256, uint256_add, uint256_sub, uint256_le, uint256_lt, uint256_check
 )
 
-from ERC20_base import (
+from bridgedERC20_base import (
     ERC20_initializer,
     ERC20_allowances,
     ERC20_approve,
@@ -40,7 +40,7 @@ func constructor{
     l1_address.write(_l1_address)
     gateway_address.write(_gateway_address)
 
-    ERC20_initializer(_name, _symbol, 0, 0)
+    ERC20_initializer(_name, _symbol, Uint256(low=0, high=0), 0)
     return ()
 end
 
@@ -57,7 +57,7 @@ end
 
 @external
 func create_token{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(
-        owner: felt, amount: felt):
+        owner: felt, amount: Uint256):
     let (caller) = get_caller_address()
     let (_gateway_address) = gateway_address.read()
     assert caller = _gateway_address
@@ -68,7 +68,7 @@ end
 
 @external
 func delete_token{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(
-        owner: felt, amount: felt):
+        owner: felt, amount: Uint256):
     let (caller) = get_caller_address()
     let (_gateway_address) = gateway_address.read()
     assert caller = _gateway_address
