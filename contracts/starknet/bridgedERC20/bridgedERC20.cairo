@@ -57,23 +57,23 @@ end
 
 @external
 func create_token{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(
-        owner: felt, amount: Uint256):
+        owner: felt, amount: felt):
     let (caller) = get_caller_address()
     let (_gateway_address) = gateway_address.read()
     assert caller = _gateway_address
 
-    ERC20_mint(owner, amount)
+    ERC20_mint(owner, Uint256(low=amount, high=0))
     return ()
 end
 
 @external
 func delete_token{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(
-        owner: felt, amount: Uint256):
+        owner: felt, amount: felt):
     let (caller) = get_caller_address()
     let (_gateway_address) = gateway_address.read()
     assert caller = _gateway_address
 
-    ERC20_burn(owner, amount)
+    ERC20_burn(owner, Uint256(low=amount, high=0))
     return ()
 end
 

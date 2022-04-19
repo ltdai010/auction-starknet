@@ -146,7 +146,7 @@
                 },
                 {
                     "name": "amount",
-                    "type": "Uint256"
+                    "type": "felt"
                 }
             ],
             "name": "create_token",
@@ -161,7 +161,7 @@
                 },
                 {
                     "name": "amount",
-                    "type": "Uint256"
+                    "type": "felt"
                 }
             ],
             "name": "delete_token",
@@ -322,7 +322,7 @@
                 "selector": "0x285bcf4282432b8ce79a54d6f704c2bb668f5bf315783f6b5932b5cf903b05e"
             },
             {
-                "offset": "0x449",
+                "offset": "0x44a",
                 "selector": "0x2d2ff30a90ed0c85cbee79c42cbda98e5f906a9a07e20d6b5f6e8eb3be974c4"
             },
             {
@@ -330,7 +330,7 @@
                 "selector": "0x2e4263afad30923c891518314c3c95dbe830a16874e8abc5777a9a20b54c76e"
             },
             {
-                "offset": "0x46f",
+                "offset": "0x470",
                 "selector": "0x31711fb89e477282f22365110cda36f06361babc6731b3ed123db341b7d0456"
             },
             {
@@ -1426,33 +1426,33 @@
             "0x48127ffb7fff8000",
             "0x48127ffb7fff8000",
             "0x208b7fff7fff7ffe",
-            "0x480a7ff87fff8000",
+            "0x480a7ff97fff8000",
             "0x1104800180018000",
             "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffc60",
             "0x48127ffe7fff8000",
-            "0x480a7ff97fff8000",
             "0x480a7ffa7fff8000",
+            "0x480a7ffb7fff8000",
             "0x1104800180018000",
             "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff9b",
             "0x40127fff7fff7fe8",
             "0x48127ffc7fff8000",
             "0x48127ffc7fff8000",
             "0x48127ffc7fff8000",
-            "0x480a7ffb7fff8000",
             "0x480a7ffc7fff8000",
             "0x480a7ffd7fff8000",
+            "0x480680017fff8000",
+            "0x0",
             "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffeae",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffead",
             "0x208b7fff7fff7ffe",
             "0x482680017ffd8000",
-            "0x3",
+            "0x2",
             "0x402a7ffd7ffc7fff",
             "0x480280007ffb8000",
             "0x480280017ffb8000",
             "0x480280027ffb8000",
             "0x480280007ffd8000",
             "0x480280017ffd8000",
-            "0x480280027ffd8000",
             "0x1104800180018000",
             "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffffe6",
             "0x40780017fff7fff",
@@ -1464,33 +1464,33 @@
             "0x0",
             "0x48127ffb7fff8000",
             "0x208b7fff7fff7ffe",
-            "0x480a7ff87fff8000",
+            "0x480a7ff97fff8000",
             "0x1104800180018000",
             "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffc3a",
             "0x48127ffe7fff8000",
-            "0x480a7ff97fff8000",
             "0x480a7ffa7fff8000",
+            "0x480a7ffb7fff8000",
             "0x1104800180018000",
             "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff75",
             "0x40127fff7fff7fe8",
             "0x48127ffc7fff8000",
             "0x48127ffc7fff8000",
             "0x48127ffc7fff8000",
-            "0x480a7ffb7fff8000",
             "0x480a7ffc7fff8000",
             "0x480a7ffd7fff8000",
+            "0x480680017fff8000",
+            "0x0",
             "0x1104800180018000",
-            "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff0f",
+            "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff0e",
             "0x208b7fff7fff7ffe",
             "0x482680017ffd8000",
-            "0x3",
+            "0x2",
             "0x402a7ffd7ffc7fff",
             "0x480280007ffb8000",
             "0x480280017ffb8000",
             "0x480280027ffb8000",
             "0x480280007ffd8000",
             "0x480280017ffd8000",
-            "0x480280027ffd8000",
             "0x1104800180018000",
             "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffffe6",
             "0x40780017fff7fff",
@@ -1837,6 +1837,7 @@
                 "autogen/starknet/arg_processor/5e1cc73f0b484f90bb02da164d88332b40c6f698801aa4d3c603dab22157e902.cairo": "let __calldata_actual_size =  __calldata_ptr - cast([cast(fp + (-3), felt**)], felt*)\n",
                 "autogen/starknet/arg_processor/5ff49a77ff86f28d91718361959448a05641fb8f275a98eaff3a6c375dbad999.cairo": "assert [__return_value_ptr] = ret_struct.address\nlet __return_value_ptr = __return_value_ptr + 1\n",
                 "autogen/starknet/arg_processor/7545e63a9e7405099d1987456532a4d98dd0942a6a507fab7680dc02ffa0ac77.cairo": "assert [__return_value_ptr] = ret_struct.decimals\nlet __return_value_ptr = __return_value_ptr + 1\n",
+                "autogen/starknet/arg_processor/7a16feca69d1dc1343a49177e1e57103319136de3f2c6fabefae170177a1305e.cairo": "let __calldata_arg_amount = [__calldata_ptr]\nlet __calldata_ptr = __calldata_ptr + 1\n",
                 "autogen/starknet/arg_processor/7af4bd4fbb5dd50674824547868ce179672433087ba629fa3b41cfc375f33be5.cairo": "assert [__return_value_ptr] = ret_struct.success\nlet __return_value_ptr = __return_value_ptr + 1\n",
                 "autogen/starknet/arg_processor/83a5cd184c33e38b097cc137878e22d249e6ccc70b4bc2529cd38dbc314f5181.cairo": "let __calldata_arg_amount = [\n    cast(__calldata_ptr, starkware.cairo.common.uint256.Uint256*)]\nlet __calldata_ptr = __calldata_ptr + 2\n",
                 "autogen/starknet/arg_processor/842edc6266065f627433dcc69539fe964cdf07411c35c7a0c9fd1c00d8ab04c6.cairo": "let __calldata_arg_added_value = [\n    cast(__calldata_ptr, starkware.cairo.common.uint256.Uint256*)]\nlet __calldata_ptr = __calldata_ptr + 2\n",
@@ -41088,7 +41089,7 @@
                                         },
                                         "parent_location": [
                                             {
-                                                "end_col": 30,
+                                                "end_col": 51,
                                                 "end_line": 65,
                                                 "input_file": {
                                                     "filename": "bridgedERC20.cairo"
@@ -41156,7 +41157,7 @@
                                         },
                                         "parent_location": [
                                             {
-                                                "end_col": 30,
+                                                "end_col": 51,
                                                 "end_line": 65,
                                                 "input_file": {
                                                     "filename": "bridgedERC20.cairo"
@@ -41224,7 +41225,7 @@
                                         },
                                         "parent_location": [
                                             {
-                                                "end_col": 30,
+                                                "end_col": 51,
                                                 "end_line": 65,
                                                 "input_file": {
                                                     "filename": "bridgedERC20.cairo"
@@ -41315,19 +41316,19 @@
                     },
                     "hints": [],
                     "inst": {
-                        "end_col": 37,
+                        "end_col": 34,
                         "end_line": 60,
                         "input_file": {
                             "filename": "bridgedERC20.cairo"
                         },
                         "parent_location": [
                             {
-                                "end_col": 29,
+                                "end_col": 41,
                                 "end_line": 65,
                                 "input_file": {
                                     "filename": "bridgedERC20.cairo"
                                 },
-                                "start_col": 23,
+                                "start_col": 35,
                                 "start_line": 65
                             },
                             "While expanding the reference 'amount' in:"
@@ -41359,28 +41360,16 @@
                     },
                     "hints": [],
                     "inst": {
-                        "end_col": 37,
-                        "end_line": 60,
+                        "end_col": 49,
+                        "end_line": 65,
                         "input_file": {
                             "filename": "bridgedERC20.cairo"
                         },
-                        "parent_location": [
-                            {
-                                "end_col": 29,
-                                "end_line": 65,
-                                "input_file": {
-                                    "filename": "bridgedERC20.cairo"
-                                },
-                                "start_col": 23,
-                                "start_line": 65
-                            },
-                            "While expanding the reference 'amount' in:"
-                        ],
-                        "start_col": 22,
-                        "start_line": 60
+                        "start_col": 48,
+                        "start_line": 65
                     }
                 },
-                "1094": {
+                "1095": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -41403,7 +41392,7 @@
                     },
                     "hints": [],
                     "inst": {
-                        "end_col": 30,
+                        "end_col": 51,
                         "end_line": 65,
                         "input_file": {
                             "filename": "bridgedERC20.cairo"
@@ -41412,7 +41401,7 @@
                         "start_line": 65
                     }
                 },
-                "1096": {
+                "1097": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -41444,7 +41433,7 @@
                         "start_line": 66
                     }
                 },
-                "1097": {
+                "1098": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -41469,13 +41458,13 @@
                     "hints": [],
                     "inst": {
                         "end_col": 40,
-                        "end_line": 3,
+                        "end_line": 2,
                         "input_file": {
-                            "filename": "autogen/starknet/arg_processor/83a5cd184c33e38b097cc137878e22d249e6ccc70b4bc2529cd38dbc314f5181.cairo"
+                            "filename": "autogen/starknet/arg_processor/7a16feca69d1dc1343a49177e1e57103319136de3f2c6fabefae170177a1305e.cairo"
                         },
                         "parent_location": [
                             {
-                                "end_col": 37,
+                                "end_col": 34,
                                 "end_line": 60,
                                 "input_file": {
                                     "filename": "bridgedERC20.cairo"
@@ -41534,10 +41523,10 @@
                             "While handling calldata argument 'amount'"
                         ],
                         "start_col": 22,
-                        "start_line": 3
+                        "start_line": 2
                     }
                 },
-                "1099": {
+                "1100": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -41583,7 +41572,7 @@
                         "start_line": 1
                     }
                 },
-                "1100": {
+                "1101": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -41653,7 +41642,7 @@
                         "start_line": 1
                     }
                 },
-                "1101": {
+                "1102": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -41723,7 +41712,7 @@
                         "start_line": 1
                     }
                 },
-                "1102": {
+                "1103": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -41793,7 +41782,7 @@
                         "start_line": 1
                     }
                 },
-                "1103": {
+                "1104": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -41863,7 +41852,7 @@
                         "start_line": 1
                     }
                 },
-                "1104": {
+                "1105": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -41888,84 +41877,14 @@
                     },
                     "hints": [],
                     "inst": {
-                        "end_col": 67,
-                        "end_line": 2,
+                        "end_col": 45,
+                        "end_line": 1,
                         "input_file": {
-                            "filename": "autogen/starknet/arg_processor/83a5cd184c33e38b097cc137878e22d249e6ccc70b4bc2529cd38dbc314f5181.cairo"
+                            "filename": "autogen/starknet/arg_processor/7a16feca69d1dc1343a49177e1e57103319136de3f2c6fabefae170177a1305e.cairo"
                         },
                         "parent_location": [
                             {
-                                "end_col": 37,
-                                "end_line": 60,
-                                "input_file": {
-                                    "filename": "bridgedERC20.cairo"
-                                },
-                                "parent_location": [
-                                    {
-                                        "end_col": 174,
-                                        "end_line": 1,
-                                        "input_file": {
-                                            "filename": "autogen/starknet/external/create_token/aa2441fef1337d8ace7030ecfae0268726a243a4efa72b360b5634bd3795ec98.cairo"
-                                        },
-                                        "parent_location": [
-                                            {
-                                                "end_col": 18,
-                                                "end_line": 59,
-                                                "input_file": {
-                                                    "filename": "bridgedERC20.cairo"
-                                                },
-                                                "start_col": 6,
-                                                "start_line": 59
-                                            },
-                                            "While constructing the external wrapper for:"
-                                        ],
-                                        "start_col": 153,
-                                        "start_line": 1
-                                    },
-                                    "While expanding the reference '__calldata_arg_amount' in:"
-                                ],
-                                "start_col": 22,
-                                "start_line": 60
-                            },
-                            "While handling calldata argument 'amount'"
-                        ],
-                        "start_col": 29,
-                        "start_line": 1
-                    }
-                },
-                "1105": {
-                    "accessible_scopes": [
-                        "__main__",
-                        "__main__",
-                        "__wrappers__",
-                        "__wrappers__.create_token"
-                    ],
-                    "flow_tracking_data": {
-                        "ap_tracking": {
-                            "group": 83,
-                            "offset": 6
-                        },
-                        "reference_ids": {
-                            "__wrappers__.create_token.__calldata_actual_size": 718,
-                            "__wrappers__.create_token.__calldata_arg_amount": 716,
-                            "__wrappers__.create_token.__calldata_arg_owner": 714,
-                            "__wrappers__.create_token.__calldata_ptr": 717,
-                            "__wrappers__.create_token.__temp38": 719,
-                            "__wrappers__.create_token.pedersen_ptr": 711,
-                            "__wrappers__.create_token.range_check_ptr": 712,
-                            "__wrappers__.create_token.syscall_ptr": 710
-                        }
-                    },
-                    "hints": [],
-                    "inst": {
-                        "end_col": 67,
-                        "end_line": 2,
-                        "input_file": {
-                            "filename": "autogen/starknet/arg_processor/83a5cd184c33e38b097cc137878e22d249e6ccc70b4bc2529cd38dbc314f5181.cairo"
-                        },
-                        "parent_location": [
-                            {
-                                "end_col": 37,
+                                "end_col": 34,
                                 "end_line": 60,
                                 "input_file": {
                                     "filename": "bridgedERC20.cairo"
@@ -42013,7 +41932,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 83,
-                            "offset": 7
+                            "offset": 6
                         },
                         "reference_ids": {
                             "__wrappers__.create_token.__calldata_actual_size": 718,
@@ -42047,7 +41966,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 83,
-                            "offset": 299
+                            "offset": 298
                         },
                         "reference_ids": {
                             "__wrappers__.create_token.__calldata_actual_size": 718,
@@ -42119,7 +42038,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 83,
-                            "offset": 300
+                            "offset": 299
                         },
                         "reference_ids": {
                             "__wrappers__.create_token.__calldata_actual_size": 718,
@@ -42192,7 +42111,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 83,
-                            "offset": 301
+                            "offset": 300
                         },
                         "reference_ids": {
                             "__wrappers__.create_token.__calldata_actual_size": 718,
@@ -42265,7 +42184,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 83,
-                            "offset": 302
+                            "offset": 301
                         },
                         "reference_ids": {
                             "__wrappers__.create_token.__calldata_actual_size": 718,
@@ -42338,7 +42257,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 83,
-                            "offset": 303
+                            "offset": 302
                         },
                         "reference_ids": {
                             "__wrappers__.create_token.__calldata_actual_size": 718,
@@ -42411,7 +42330,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 83,
-                            "offset": 304
+                            "offset": 303
                         },
                         "reference_ids": {
                             "__wrappers__.create_token.__calldata_actual_size": 718,
@@ -42484,7 +42403,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 83,
-                            "offset": 305
+                            "offset": 304
                         },
                         "reference_ids": {
                             "__wrappers__.create_token.__calldata_actual_size": 718,
@@ -42891,7 +42810,7 @@
                                         },
                                         "parent_location": [
                                             {
-                                                "end_col": 30,
+                                                "end_col": 51,
                                                 "end_line": 76,
                                                 "input_file": {
                                                     "filename": "bridgedERC20.cairo"
@@ -42959,7 +42878,7 @@
                                         },
                                         "parent_location": [
                                             {
-                                                "end_col": 30,
+                                                "end_col": 51,
                                                 "end_line": 76,
                                                 "input_file": {
                                                     "filename": "bridgedERC20.cairo"
@@ -43027,7 +42946,7 @@
                                         },
                                         "parent_location": [
                                             {
-                                                "end_col": 30,
+                                                "end_col": 51,
                                                 "end_line": 76,
                                                 "input_file": {
                                                     "filename": "bridgedERC20.cairo"
@@ -43118,19 +43037,19 @@
                     },
                     "hints": [],
                     "inst": {
-                        "end_col": 37,
+                        "end_col": 34,
                         "end_line": 71,
                         "input_file": {
                             "filename": "bridgedERC20.cairo"
                         },
                         "parent_location": [
                             {
-                                "end_col": 29,
+                                "end_col": 41,
                                 "end_line": 76,
                                 "input_file": {
                                     "filename": "bridgedERC20.cairo"
                                 },
-                                "start_col": 23,
+                                "start_col": 35,
                                 "start_line": 76
                             },
                             "While expanding the reference 'amount' in:"
@@ -43162,28 +43081,16 @@
                     },
                     "hints": [],
                     "inst": {
-                        "end_col": 37,
-                        "end_line": 71,
+                        "end_col": 49,
+                        "end_line": 76,
                         "input_file": {
                             "filename": "bridgedERC20.cairo"
                         },
-                        "parent_location": [
-                            {
-                                "end_col": 29,
-                                "end_line": 76,
-                                "input_file": {
-                                    "filename": "bridgedERC20.cairo"
-                                },
-                                "start_col": 23,
-                                "start_line": 76
-                            },
-                            "While expanding the reference 'amount' in:"
-                        ],
-                        "start_col": 22,
-                        "start_line": 71
+                        "start_col": 48,
+                        "start_line": 76
                     }
                 },
-                "1132": {
+                "1133": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -43206,7 +43113,7 @@
                     },
                     "hints": [],
                     "inst": {
-                        "end_col": 30,
+                        "end_col": 51,
                         "end_line": 76,
                         "input_file": {
                             "filename": "bridgedERC20.cairo"
@@ -43215,7 +43122,7 @@
                         "start_line": 76
                     }
                 },
-                "1134": {
+                "1135": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -43247,7 +43154,7 @@
                         "start_line": 77
                     }
                 },
-                "1135": {
+                "1136": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -43272,13 +43179,13 @@
                     "hints": [],
                     "inst": {
                         "end_col": 40,
-                        "end_line": 3,
+                        "end_line": 2,
                         "input_file": {
-                            "filename": "autogen/starknet/arg_processor/83a5cd184c33e38b097cc137878e22d249e6ccc70b4bc2529cd38dbc314f5181.cairo"
+                            "filename": "autogen/starknet/arg_processor/7a16feca69d1dc1343a49177e1e57103319136de3f2c6fabefae170177a1305e.cairo"
                         },
                         "parent_location": [
                             {
-                                "end_col": 37,
+                                "end_col": 34,
                                 "end_line": 71,
                                 "input_file": {
                                     "filename": "bridgedERC20.cairo"
@@ -43337,10 +43244,10 @@
                             "While handling calldata argument 'amount'"
                         ],
                         "start_col": 22,
-                        "start_line": 3
+                        "start_line": 2
                     }
                 },
-                "1137": {
+                "1138": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -43386,7 +43293,7 @@
                         "start_line": 1
                     }
                 },
-                "1138": {
+                "1139": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -43456,7 +43363,7 @@
                         "start_line": 1
                     }
                 },
-                "1139": {
+                "1140": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -43526,7 +43433,7 @@
                         "start_line": 1
                     }
                 },
-                "1140": {
+                "1141": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -43596,7 +43503,7 @@
                         "start_line": 1
                     }
                 },
-                "1141": {
+                "1142": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -43666,7 +43573,7 @@
                         "start_line": 1
                     }
                 },
-                "1142": {
+                "1143": {
                     "accessible_scopes": [
                         "__main__",
                         "__main__",
@@ -43691,84 +43598,14 @@
                     },
                     "hints": [],
                     "inst": {
-                        "end_col": 67,
-                        "end_line": 2,
+                        "end_col": 45,
+                        "end_line": 1,
                         "input_file": {
-                            "filename": "autogen/starknet/arg_processor/83a5cd184c33e38b097cc137878e22d249e6ccc70b4bc2529cd38dbc314f5181.cairo"
+                            "filename": "autogen/starknet/arg_processor/7a16feca69d1dc1343a49177e1e57103319136de3f2c6fabefae170177a1305e.cairo"
                         },
                         "parent_location": [
                             {
-                                "end_col": 37,
-                                "end_line": 71,
-                                "input_file": {
-                                    "filename": "bridgedERC20.cairo"
-                                },
-                                "parent_location": [
-                                    {
-                                        "end_col": 174,
-                                        "end_line": 1,
-                                        "input_file": {
-                                            "filename": "autogen/starknet/external/delete_token/aa2441fef1337d8ace7030ecfae0268726a243a4efa72b360b5634bd3795ec98.cairo"
-                                        },
-                                        "parent_location": [
-                                            {
-                                                "end_col": 18,
-                                                "end_line": 70,
-                                                "input_file": {
-                                                    "filename": "bridgedERC20.cairo"
-                                                },
-                                                "start_col": 6,
-                                                "start_line": 70
-                                            },
-                                            "While constructing the external wrapper for:"
-                                        ],
-                                        "start_col": 153,
-                                        "start_line": 1
-                                    },
-                                    "While expanding the reference '__calldata_arg_amount' in:"
-                                ],
-                                "start_col": 22,
-                                "start_line": 71
-                            },
-                            "While handling calldata argument 'amount'"
-                        ],
-                        "start_col": 29,
-                        "start_line": 1
-                    }
-                },
-                "1143": {
-                    "accessible_scopes": [
-                        "__main__",
-                        "__main__",
-                        "__wrappers__",
-                        "__wrappers__.delete_token"
-                    ],
-                    "flow_tracking_data": {
-                        "ap_tracking": {
-                            "group": 86,
-                            "offset": 6
-                        },
-                        "reference_ids": {
-                            "__wrappers__.delete_token.__calldata_actual_size": 748,
-                            "__wrappers__.delete_token.__calldata_arg_amount": 746,
-                            "__wrappers__.delete_token.__calldata_arg_owner": 744,
-                            "__wrappers__.delete_token.__calldata_ptr": 747,
-                            "__wrappers__.delete_token.__temp39": 749,
-                            "__wrappers__.delete_token.pedersen_ptr": 741,
-                            "__wrappers__.delete_token.range_check_ptr": 742,
-                            "__wrappers__.delete_token.syscall_ptr": 740
-                        }
-                    },
-                    "hints": [],
-                    "inst": {
-                        "end_col": 67,
-                        "end_line": 2,
-                        "input_file": {
-                            "filename": "autogen/starknet/arg_processor/83a5cd184c33e38b097cc137878e22d249e6ccc70b4bc2529cd38dbc314f5181.cairo"
-                        },
-                        "parent_location": [
-                            {
-                                "end_col": 37,
+                                "end_col": 34,
                                 "end_line": 71,
                                 "input_file": {
                                     "filename": "bridgedERC20.cairo"
@@ -43816,7 +43653,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 86,
-                            "offset": 7
+                            "offset": 6
                         },
                         "reference_ids": {
                             "__wrappers__.delete_token.__calldata_actual_size": 748,
@@ -59259,7 +59096,7 @@
                     "flow_tracking_data": {
                         "ap_tracking": {
                             "group": 83,
-                            "offset": 299
+                            "offset": 298
                         },
                         "reference_ids": {
                             "__wrappers__.create_token.__calldata_actual_size": 718,
@@ -59871,7 +59708,7 @@
                 "full_name": "__main__.create_token.Args",
                 "members": {
                     "amount": {
-                        "cairo_type": "starkware.cairo.common.uint256.Uint256",
+                        "cairo_type": "felt",
                         "offset": 1
                     },
                     "owner": {
@@ -59879,7 +59716,7 @@
                         "offset": 0
                     }
                 },
-                "size": 3,
+                "size": 2,
                 "type": "struct"
             },
             "__main__.create_token.ImplicitArgs": {
@@ -59927,7 +59764,7 @@
                 "type": "reference"
             },
             "__main__.create_token.amount": {
-                "cairo_type": "starkware.cairo.common.uint256.Uint256",
+                "cairo_type": "felt",
                 "full_name": "__main__.create_token.amount",
                 "references": [
                     {
@@ -59936,7 +59773,7 @@
                             "offset": 0
                         },
                         "pc": 1079,
-                        "value": "[cast(fp + (-4), starkware.cairo.common.uint256.Uint256*)]"
+                        "value": "[cast(fp + (-3), felt*)]"
                     }
                 ],
                 "type": "reference"
@@ -59966,7 +59803,7 @@
                             "offset": 0
                         },
                         "pc": 1079,
-                        "value": "[cast(fp + (-5), felt*)]"
+                        "value": "[cast(fp + (-4), felt*)]"
                     }
                 ],
                 "type": "reference"
@@ -59981,7 +59818,7 @@
                             "offset": 0
                         },
                         "pc": 1079,
-                        "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
+                        "value": "[cast(fp + (-6), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
@@ -59996,7 +59833,7 @@
                             "group": 82,
                             "offset": 290
                         },
-                        "pc": 1096,
+                        "pc": 1097,
                         "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -60012,7 +59849,7 @@
                             "offset": 0
                         },
                         "pc": 1079,
-                        "value": "[cast(fp + (-6), felt*)]"
+                        "value": "[cast(fp + (-5), felt*)]"
                     },
                     {
                         "ap_tracking_data": {
@@ -60027,7 +59864,7 @@
                             "group": 82,
                             "offset": 290
                         },
-                        "pc": 1096,
+                        "pc": 1097,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -60043,7 +59880,7 @@
                             "offset": 0
                         },
                         "pc": 1079,
-                        "value": "[cast(fp + (-8), felt**)]"
+                        "value": "[cast(fp + (-7), felt**)]"
                     },
                     {
                         "ap_tracking_data": {
@@ -60066,7 +59903,7 @@
                             "group": 82,
                             "offset": 290
                         },
-                        "pc": 1096,
+                        "pc": 1097,
                         "value": "[cast(ap + (-3), felt**)]"
                     }
                 ],
@@ -60474,7 +60311,7 @@
                 "full_name": "__main__.delete_token.Args",
                 "members": {
                     "amount": {
-                        "cairo_type": "starkware.cairo.common.uint256.Uint256",
+                        "cairo_type": "felt",
                         "offset": 1
                     },
                     "owner": {
@@ -60482,7 +60319,7 @@
                         "offset": 0
                     }
                 },
-                "size": 3,
+                "size": 2,
                 "type": "struct"
             },
             "__main__.delete_token.ImplicitArgs": {
@@ -60530,7 +60367,7 @@
                 "type": "reference"
             },
             "__main__.delete_token.amount": {
-                "cairo_type": "starkware.cairo.common.uint256.Uint256",
+                "cairo_type": "felt",
                 "full_name": "__main__.delete_token.amount",
                 "references": [
                     {
@@ -60539,7 +60376,7 @@
                             "offset": 0
                         },
                         "pc": 1117,
-                        "value": "[cast(fp + (-4), starkware.cairo.common.uint256.Uint256*)]"
+                        "value": "[cast(fp + (-3), felt*)]"
                     }
                 ],
                 "type": "reference"
@@ -60569,7 +60406,7 @@
                             "offset": 0
                         },
                         "pc": 1117,
-                        "value": "[cast(fp + (-5), felt*)]"
+                        "value": "[cast(fp + (-4), felt*)]"
                     }
                 ],
                 "type": "reference"
@@ -60584,7 +60421,7 @@
                             "offset": 0
                         },
                         "pc": 1117,
-                        "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
+                        "value": "[cast(fp + (-6), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
@@ -60599,7 +60436,7 @@
                             "group": 85,
                             "offset": 0
                         },
-                        "pc": 1134,
+                        "pc": 1135,
                         "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -60615,7 +60452,7 @@
                             "offset": 0
                         },
                         "pc": 1117,
-                        "value": "[cast(fp + (-6), felt*)]"
+                        "value": "[cast(fp + (-5), felt*)]"
                     },
                     {
                         "ap_tracking_data": {
@@ -60630,7 +60467,7 @@
                             "group": 85,
                             "offset": 0
                         },
-                        "pc": 1134,
+                        "pc": 1135,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -60646,7 +60483,7 @@
                             "offset": 0
                         },
                         "pc": 1117,
-                        "value": "[cast(fp + (-8), felt**)]"
+                        "value": "[cast(fp + (-7), felt**)]"
                     },
                     {
                         "ap_tracking_data": {
@@ -60669,7 +60506,7 @@
                             "group": 85,
                             "offset": 0
                         },
-                        "pc": 1134,
+                        "pc": 1135,
                         "value": "[cast(ap + (-3), felt**)]"
                     }
                 ],
@@ -64160,7 +63997,7 @@
                 "decorators": [
                     "external"
                 ],
-                "pc": 1097,
+                "pc": 1098,
                 "type": "function"
             },
             "__wrappers__.create_token.Args": {
@@ -64215,14 +64052,14 @@
                             "group": 83,
                             "offset": 0
                         },
-                        "pc": 1097,
-                        "value": "cast([fp + (-3)] + 3 - [fp + (-3)], felt)"
+                        "pc": 1098,
+                        "value": "cast([fp + (-3)] + 2 - [fp + (-3)], felt)"
                     }
                 ],
                 "type": "reference"
             },
             "__wrappers__.create_token.__calldata_arg_amount": {
-                "cairo_type": "starkware.cairo.common.uint256.Uint256",
+                "cairo_type": "felt",
                 "full_name": "__wrappers__.create_token.__calldata_arg_amount",
                 "references": [
                     {
@@ -64230,8 +64067,8 @@
                             "group": 83,
                             "offset": 0
                         },
-                        "pc": 1097,
-                        "value": "[cast([fp + (-3)] + 1, starkware.cairo.common.uint256.Uint256*)]"
+                        "pc": 1098,
+                        "value": "[cast([fp + (-3)] + 1, felt*)]"
                     }
                 ],
                 "type": "reference"
@@ -64245,7 +64082,7 @@
                             "group": 83,
                             "offset": 0
                         },
-                        "pc": 1097,
+                        "pc": 1098,
                         "value": "[cast([fp + (-3)], felt*)]"
                     }
                 ],
@@ -64260,7 +64097,7 @@
                             "group": 83,
                             "offset": 0
                         },
-                        "pc": 1097,
+                        "pc": 1098,
                         "value": "[cast(fp + (-3), felt**)]"
                     },
                     {
@@ -64268,7 +64105,7 @@
                             "group": 83,
                             "offset": 0
                         },
-                        "pc": 1097,
+                        "pc": 1098,
                         "value": "cast([fp + (-3)] + 1, felt*)"
                     },
                     {
@@ -64276,8 +64113,8 @@
                             "group": 83,
                             "offset": 0
                         },
-                        "pc": 1097,
-                        "value": "cast([fp + (-3)] + 3, felt*)"
+                        "pc": 1098,
+                        "value": "cast([fp + (-3)] + 2, felt*)"
                     }
                 ],
                 "type": "reference"
@@ -64291,7 +64128,7 @@
                             "group": 83,
                             "offset": 1
                         },
-                        "pc": 1099,
+                        "pc": 1100,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -64310,13 +64147,13 @@
                             "group": 83,
                             "offset": 0
                         },
-                        "pc": 1097,
+                        "pc": 1098,
                         "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
                             "group": 83,
-                            "offset": 299
+                            "offset": 298
                         },
                         "pc": 1108,
                         "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
@@ -64333,13 +64170,13 @@
                             "group": 83,
                             "offset": 0
                         },
-                        "pc": 1097,
+                        "pc": 1098,
                         "value": "[cast([fp + (-5)] + 2, felt*)]"
                     },
                     {
                         "ap_tracking_data": {
                             "group": 83,
-                            "offset": 299
+                            "offset": 298
                         },
                         "pc": 1108,
                         "value": "[cast(ap + (-1), felt*)]"
@@ -64354,7 +64191,7 @@
                     {
                         "ap_tracking_data": {
                             "group": 83,
-                            "offset": 299
+                            "offset": 298
                         },
                         "pc": 1108,
                         "value": "[cast(ap + 0, __main__.create_token.Return*)]"
@@ -64369,7 +64206,7 @@
                     {
                         "ap_tracking_data": {
                             "group": 83,
-                            "offset": 300
+                            "offset": 299
                         },
                         "pc": 1110,
                         "value": "[cast(ap + (-1), felt**)]"
@@ -64384,7 +64221,7 @@
                     {
                         "ap_tracking_data": {
                             "group": 83,
-                            "offset": 300
+                            "offset": 299
                         },
                         "pc": 1110,
                         "value": "cast(0, felt)"
@@ -64401,13 +64238,13 @@
                             "group": 83,
                             "offset": 0
                         },
-                        "pc": 1097,
+                        "pc": 1098,
                         "value": "[cast([fp + (-5)], felt**)]"
                     },
                     {
                         "ap_tracking_data": {
                             "group": 83,
-                            "offset": 299
+                            "offset": 298
                         },
                         "pc": 1108,
                         "value": "[cast(ap + (-3), felt**)]"
@@ -65168,7 +65005,7 @@
                 "decorators": [
                     "external"
                 ],
-                "pc": 1135,
+                "pc": 1136,
                 "type": "function"
             },
             "__wrappers__.delete_token.Args": {
@@ -65223,14 +65060,14 @@
                             "group": 86,
                             "offset": 0
                         },
-                        "pc": 1135,
-                        "value": "cast([fp + (-3)] + 3 - [fp + (-3)], felt)"
+                        "pc": 1136,
+                        "value": "cast([fp + (-3)] + 2 - [fp + (-3)], felt)"
                     }
                 ],
                 "type": "reference"
             },
             "__wrappers__.delete_token.__calldata_arg_amount": {
-                "cairo_type": "starkware.cairo.common.uint256.Uint256",
+                "cairo_type": "felt",
                 "full_name": "__wrappers__.delete_token.__calldata_arg_amount",
                 "references": [
                     {
@@ -65238,8 +65075,8 @@
                             "group": 86,
                             "offset": 0
                         },
-                        "pc": 1135,
-                        "value": "[cast([fp + (-3)] + 1, starkware.cairo.common.uint256.Uint256*)]"
+                        "pc": 1136,
+                        "value": "[cast([fp + (-3)] + 1, felt*)]"
                     }
                 ],
                 "type": "reference"
@@ -65253,7 +65090,7 @@
                             "group": 86,
                             "offset": 0
                         },
-                        "pc": 1135,
+                        "pc": 1136,
                         "value": "[cast([fp + (-3)], felt*)]"
                     }
                 ],
@@ -65268,7 +65105,7 @@
                             "group": 86,
                             "offset": 0
                         },
-                        "pc": 1135,
+                        "pc": 1136,
                         "value": "[cast(fp + (-3), felt**)]"
                     },
                     {
@@ -65276,7 +65113,7 @@
                             "group": 86,
                             "offset": 0
                         },
-                        "pc": 1135,
+                        "pc": 1136,
                         "value": "cast([fp + (-3)] + 1, felt*)"
                     },
                     {
@@ -65284,8 +65121,8 @@
                             "group": 86,
                             "offset": 0
                         },
-                        "pc": 1135,
-                        "value": "cast([fp + (-3)] + 3, felt*)"
+                        "pc": 1136,
+                        "value": "cast([fp + (-3)] + 2, felt*)"
                     }
                 ],
                 "type": "reference"
@@ -65299,7 +65136,7 @@
                             "group": 86,
                             "offset": 1
                         },
-                        "pc": 1137,
+                        "pc": 1138,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -65318,7 +65155,7 @@
                             "group": 86,
                             "offset": 0
                         },
-                        "pc": 1135,
+                        "pc": 1136,
                         "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
@@ -65341,7 +65178,7 @@
                             "group": 86,
                             "offset": 0
                         },
-                        "pc": 1135,
+                        "pc": 1136,
                         "value": "[cast([fp + (-5)] + 2, felt*)]"
                     },
                     {
@@ -65409,7 +65246,7 @@
                             "group": 86,
                             "offset": 0
                         },
-                        "pc": 1135,
+                        "pc": 1136,
                         "value": "[cast([fp + (-5)], felt**)]"
                     },
                     {
@@ -82852,39 +82689,39 @@
                         "offset": 0
                     },
                     "pc": 1079,
+                    "value": "[cast(fp + (-4), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 82,
+                        "offset": 0
+                    },
+                    "pc": 1079,
+                    "value": "[cast(fp + (-3), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 82,
+                        "offset": 0
+                    },
+                    "pc": 1079,
+                    "value": "[cast(fp + (-7), felt**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 82,
+                        "offset": 0
+                    },
+                    "pc": 1079,
+                    "value": "[cast(fp + (-6), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 82,
+                        "offset": 0
+                    },
+                    "pc": 1079,
                     "value": "[cast(fp + (-5), felt*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 82,
-                        "offset": 0
-                    },
-                    "pc": 1079,
-                    "value": "[cast(fp + (-4), starkware.cairo.common.uint256.Uint256*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 82,
-                        "offset": 0
-                    },
-                    "pc": 1079,
-                    "value": "[cast(fp + (-8), felt**)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 82,
-                        "offset": 0
-                    },
-                    "pc": 1079,
-                    "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 82,
-                        "offset": 0
-                    },
-                    "pc": 1079,
-                    "value": "[cast(fp + (-6), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
@@ -82939,7 +82776,7 @@
                         "group": 82,
                         "offset": 290
                     },
-                    "pc": 1096,
+                    "pc": 1097,
                     "value": "[cast(ap + (-3), felt**)]"
                 },
                 {
@@ -82947,7 +82784,7 @@
                         "group": 82,
                         "offset": 290
                     },
-                    "pc": 1096,
+                    "pc": 1097,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -82955,7 +82792,7 @@
                         "group": 82,
                         "offset": 290
                     },
-                    "pc": 1096,
+                    "pc": 1097,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
@@ -82963,7 +82800,7 @@
                         "group": 83,
                         "offset": 0
                     },
-                    "pc": 1097,
+                    "pc": 1098,
                     "value": "[cast([fp + (-5)], felt**)]"
                 },
                 {
@@ -82971,7 +82808,7 @@
                         "group": 83,
                         "offset": 0
                     },
-                    "pc": 1097,
+                    "pc": 1098,
                     "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -82979,7 +82816,7 @@
                         "group": 83,
                         "offset": 0
                     },
-                    "pc": 1097,
+                    "pc": 1098,
                     "value": "[cast([fp + (-5)] + 2, felt*)]"
                 },
                 {
@@ -82987,7 +82824,7 @@
                         "group": 83,
                         "offset": 0
                     },
-                    "pc": 1097,
+                    "pc": 1098,
                     "value": "[cast(fp + (-3), felt**)]"
                 },
                 {
@@ -82995,7 +82832,7 @@
                         "group": 83,
                         "offset": 0
                     },
-                    "pc": 1097,
+                    "pc": 1098,
                     "value": "[cast([fp + (-3)], felt*)]"
                 },
                 {
@@ -83003,7 +82840,7 @@
                         "group": 83,
                         "offset": 0
                     },
-                    "pc": 1097,
+                    "pc": 1098,
                     "value": "cast([fp + (-3)] + 1, felt*)"
                 },
                 {
@@ -83011,37 +82848,37 @@
                         "group": 83,
                         "offset": 0
                     },
-                    "pc": 1097,
-                    "value": "[cast([fp + (-3)] + 1, starkware.cairo.common.uint256.Uint256*)]"
+                    "pc": 1098,
+                    "value": "[cast([fp + (-3)] + 1, felt*)]"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 83,
                         "offset": 0
                     },
-                    "pc": 1097,
-                    "value": "cast([fp + (-3)] + 3, felt*)"
+                    "pc": 1098,
+                    "value": "cast([fp + (-3)] + 2, felt*)"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 83,
                         "offset": 0
                     },
-                    "pc": 1097,
-                    "value": "cast([fp + (-3)] + 3 - [fp + (-3)], felt)"
+                    "pc": 1098,
+                    "value": "cast([fp + (-3)] + 2 - [fp + (-3)], felt)"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 83,
                         "offset": 1
                     },
-                    "pc": 1099,
+                    "pc": 1100,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 83,
-                        "offset": 299
+                        "offset": 298
                     },
                     "pc": 1108,
                     "value": "[cast(ap + (-3), felt**)]"
@@ -83049,7 +82886,7 @@
                 {
                     "ap_tracking_data": {
                         "group": 83,
-                        "offset": 299
+                        "offset": 298
                     },
                     "pc": 1108,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
@@ -83057,7 +82894,7 @@
                 {
                     "ap_tracking_data": {
                         "group": 83,
-                        "offset": 299
+                        "offset": 298
                     },
                     "pc": 1108,
                     "value": "[cast(ap + (-1), felt*)]"
@@ -83065,7 +82902,7 @@
                 {
                     "ap_tracking_data": {
                         "group": 83,
-                        "offset": 299
+                        "offset": 298
                     },
                     "pc": 1108,
                     "value": "[cast(ap + 0, __main__.create_token.Return*)]"
@@ -83073,7 +82910,7 @@
                 {
                     "ap_tracking_data": {
                         "group": 83,
-                        "offset": 300
+                        "offset": 299
                     },
                     "pc": 1110,
                     "value": "[cast(ap + (-1), felt**)]"
@@ -83081,7 +82918,7 @@
                 {
                     "ap_tracking_data": {
                         "group": 83,
-                        "offset": 300
+                        "offset": 299
                     },
                     "pc": 1110,
                     "value": "cast(0, felt)"
@@ -83092,39 +82929,39 @@
                         "offset": 0
                     },
                     "pc": 1117,
+                    "value": "[cast(fp + (-4), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 84,
+                        "offset": 0
+                    },
+                    "pc": 1117,
+                    "value": "[cast(fp + (-3), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 84,
+                        "offset": 0
+                    },
+                    "pc": 1117,
+                    "value": "[cast(fp + (-7), felt**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 84,
+                        "offset": 0
+                    },
+                    "pc": 1117,
+                    "value": "[cast(fp + (-6), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 84,
+                        "offset": 0
+                    },
+                    "pc": 1117,
                     "value": "[cast(fp + (-5), felt*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 84,
-                        "offset": 0
-                    },
-                    "pc": 1117,
-                    "value": "[cast(fp + (-4), starkware.cairo.common.uint256.Uint256*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 84,
-                        "offset": 0
-                    },
-                    "pc": 1117,
-                    "value": "[cast(fp + (-8), felt**)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 84,
-                        "offset": 0
-                    },
-                    "pc": 1117,
-                    "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 84,
-                        "offset": 0
-                    },
-                    "pc": 1117,
-                    "value": "[cast(fp + (-6), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
@@ -83179,7 +83016,7 @@
                         "group": 85,
                         "offset": 0
                     },
-                    "pc": 1134,
+                    "pc": 1135,
                     "value": "[cast(ap + (-3), felt**)]"
                 },
                 {
@@ -83187,7 +83024,7 @@
                         "group": 85,
                         "offset": 0
                     },
-                    "pc": 1134,
+                    "pc": 1135,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -83195,7 +83032,7 @@
                         "group": 85,
                         "offset": 0
                     },
-                    "pc": 1134,
+                    "pc": 1135,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
@@ -83203,7 +83040,7 @@
                         "group": 86,
                         "offset": 0
                     },
-                    "pc": 1135,
+                    "pc": 1136,
                     "value": "[cast([fp + (-5)], felt**)]"
                 },
                 {
@@ -83211,7 +83048,7 @@
                         "group": 86,
                         "offset": 0
                     },
-                    "pc": 1135,
+                    "pc": 1136,
                     "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -83219,7 +83056,7 @@
                         "group": 86,
                         "offset": 0
                     },
-                    "pc": 1135,
+                    "pc": 1136,
                     "value": "[cast([fp + (-5)] + 2, felt*)]"
                 },
                 {
@@ -83227,7 +83064,7 @@
                         "group": 86,
                         "offset": 0
                     },
-                    "pc": 1135,
+                    "pc": 1136,
                     "value": "[cast(fp + (-3), felt**)]"
                 },
                 {
@@ -83235,7 +83072,7 @@
                         "group": 86,
                         "offset": 0
                     },
-                    "pc": 1135,
+                    "pc": 1136,
                     "value": "[cast([fp + (-3)], felt*)]"
                 },
                 {
@@ -83243,7 +83080,7 @@
                         "group": 86,
                         "offset": 0
                     },
-                    "pc": 1135,
+                    "pc": 1136,
                     "value": "cast([fp + (-3)] + 1, felt*)"
                 },
                 {
@@ -83251,31 +83088,31 @@
                         "group": 86,
                         "offset": 0
                     },
-                    "pc": 1135,
-                    "value": "[cast([fp + (-3)] + 1, starkware.cairo.common.uint256.Uint256*)]"
+                    "pc": 1136,
+                    "value": "[cast([fp + (-3)] + 1, felt*)]"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 86,
                         "offset": 0
                     },
-                    "pc": 1135,
-                    "value": "cast([fp + (-3)] + 3, felt*)"
+                    "pc": 1136,
+                    "value": "cast([fp + (-3)] + 2, felt*)"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 86,
                         "offset": 0
                     },
-                    "pc": 1135,
-                    "value": "cast([fp + (-3)] + 3 - [fp + (-3)], felt)"
+                    "pc": 1136,
+                    "value": "cast([fp + (-3)] + 2 - [fp + (-3)], felt)"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 86,
                         "offset": 1
                     },
-                    "pc": 1137,
+                    "pc": 1138,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {

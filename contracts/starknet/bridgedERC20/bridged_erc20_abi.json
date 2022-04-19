@@ -145,7 +145,7 @@
             },
             {
                 "name": "amount",
-                "type": "Uint256"
+                "type": "felt"
             }
         ],
         "name": "create_token",
@@ -160,7 +160,7 @@
             },
             {
                 "name": "amount",
-                "type": "Uint256"
+                "type": "felt"
             }
         ],
         "name": "delete_token",
