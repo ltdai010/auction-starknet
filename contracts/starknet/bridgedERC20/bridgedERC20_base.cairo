@@ -44,14 +44,11 @@ func ERC20_initializer{
         range_check_ptr
     }(
         name: felt,
-        symbol: felt,
-        initial_supply: Uint256,
-        recipient: felt
+        symbol: felt
     ):
     ERC20_name.write(name)
     ERC20_symbol.write(symbol)
     ERC20_decimals.write(18)
-    ERC20_mint(recipient, initial_supply)
     return ()
 end
 

@@ -40,7 +40,7 @@ func constructor{
     l1_address.write(_l1_address)
     gateway_address.write(_gateway_address)
 
-    ERC20_initializer(_name, _symbol, Uint256(low=0, high=0), 0)
+    ERC20_initializer(_name, _symbol)
     return ()
 end
 
