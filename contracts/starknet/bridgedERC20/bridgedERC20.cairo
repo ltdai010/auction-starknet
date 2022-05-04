@@ -62,7 +62,7 @@ func create_token{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_
     let (_gateway_address) = gateway_address.read()
     assert caller = _gateway_address
 
-    ERC20_mint(owner, Uint256(low=amount, high=0))
+    ERC20_mint(owner, amount)
     return ()
 end
 
@@ -73,7 +73,7 @@ func delete_token{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_
     let (_gateway_address) = gateway_address.read()
     assert caller = _gateway_address
 
-    ERC20_burn(owner, Uint256(low=amount, high=0))
+    ERC20_burn(owner, amount)
     return ()
 end
 
