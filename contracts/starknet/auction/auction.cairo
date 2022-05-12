@@ -205,6 +205,4 @@ func finish{pedersen_ptr : HashBuiltin*, syscall_ptr : felt*, range_check_ptr}(
     return ()
 end
 
-
-
-# ========= Setter ========= #
+# ========= Setter =========
