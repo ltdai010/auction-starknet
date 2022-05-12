@@ -150,8 +150,9 @@ func bid{pedersen_ptr : HashBuiltin*, syscall_ptr : felt*, range_check_ptr}(
     # add old bid with new bid
     let (new_bid, _: Uint256) = uint256_add(bid, amount)
     # compare highest bid with new bid
-    let (higher) = uint256_lt(highest_bid, new_bid)
-    assert_not_zero(higher)
+    if highest_bid != 0 :
+        let (higher) = uint256_lt(highest_bid, new_bid)
+        assert_not_zero(higher)
     # update map bidder
     map_bidder.write(contract_sale=_contract_sale, token_id=_token_id, bidder=caller, value=new_bid)
     return ()

@@ -1,7 +1,7 @@
 import {ethers} from 'hardhat';
 
 async function main() {
-  const Contract = await ethers.getContractFactory('GatewayERC20');
+  const Contract = await ethers.getContractFactory('GatewayERC721');
   const contract = await Contract.deploy('0xde29d060d45901fb19ed6c6e959eb22d8626708e');
 
   await contract.deployed();
